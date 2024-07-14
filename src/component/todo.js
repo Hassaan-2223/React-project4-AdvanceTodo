@@ -9,10 +9,10 @@ const Todo = () => {
     const [showModal, setShowModal] = useState(false)
     const [showcheckedonly, setshowcheckedonly] = useState(false)
     const [items, setItems] = useState(()=>{
-        return JSON.parse(localStorage.getItem("items"))
+        return JSON.parse(localStorage.getItem("items")) || []
     })
     const [deleteditems, setdeleteditems] = useState(()=>{
-        return JSON.parse(localStorage.getItem("deleted"))
+        return JSON.parse(localStorage.getItem("deleted")) || []
     })
 
 
